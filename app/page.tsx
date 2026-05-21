@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
 import FaqSection from '@/components/FaqSection'
 import ContactForm from '@/components/ContactForm'
 import ProjectsSlider from '@/components/ProjectsSlider'
 import CookieBanner from '@/components/CookieBanner'
 import FloatingCtas from '@/components/FloatingCtas'
+import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata: Metadata = {
   title: 'Serra.link — Experts en creació de pàgines web i programació',
@@ -150,8 +153,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* TRUST BAR */}
-      <div className="trust-bar">
+      {/* TRUST BAR — first content after hero, skip-link target */}
+      <div id="main-content" className="trust-bar">
         <div className="trust-item"><span>✦</span> Disseny web professional</div>
         <div className="trust-item"><span>✦</span> Programació a mida</div>
         <div className="trust-item"><span>✦</span> E-commerce WooCommerce</div>
@@ -160,11 +163,12 @@ export default function HomePage() {
       </div>
 
       {/* PROCESS */}
+      <ScrollReveal>
       <div className="section process-section-wrap">
         <div className="process-layout">
           <div className="process-left">
-            <div className="section-label">Com treballem</div>
-            <h2 className="section-title">Un procés senzill,<br />resultats excepcionals</h2>
+            <div className="section-label reveal">Com treballem</div>
+            <h2 className="section-title reveal reveal-delay-1">Un procés senzill,<br />resultats excepcionals</h2>
             <p style={{ fontSize: '16px', color: 'var(--text-2)', lineHeight: 1.7, marginBottom: '48px' }}>Cada projecte segueix una metodologia clara on la comunicació és la clau de tot.</p>
             <div className="steps-list">
               <div className="step-item">
@@ -253,13 +257,15 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      </ScrollReveal>
 
       {/* SERVICES */}
       <section className="services-section" id="serveis">
         <div className="services-inner">
-          <div className="section-label">Serveis</div>
-          <h2 className="section-title">Tot el que necessites<br />per créixer online</h2>
-          <p className="section-sub" style={{ marginBottom: '50px' }}>Des del disseny fins al llançament i més enllà.</p>
+          <ScrollReveal>
+          <div className="section-label reveal">Serveis</div>
+          <h2 className="section-title reveal reveal-delay-1">Tot el que necessites<br />per créixer online</h2>
+          <p className="section-sub reveal reveal-delay-2" style={{ marginBottom: '50px' }}>Des del disseny fins al llançament i més enllà.</p>
           <div className="services-grid">
             <div className="service-card">
               <div className="service-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="14" rx="2" /><path d="M8 21h8M12 17v4" /></svg></div>
@@ -292,6 +298,7 @@ export default function HomePage() {
               <p>Et dotem d&apos;eines per gestionar la teva web quan vulguis. La fem totalment usable i fàcil d&apos;actualitzar sense coneixements tècnics.</p>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
 
@@ -343,10 +350,11 @@ export default function HomePage() {
 
       {/* AI SECTION */}
       <section className="ai-section" id="ia">
+        <ScrollReveal>
         <div className="ai-inner">
           <div>
-            <div className="section-label">Nova era digital</div>
-            <h2 className="section-title">Treballem amb<br />Intel·ligència Artificial</h2>
+            <div className="section-label reveal">Nova era digital</div>
+            <h2 className="section-title reveal reveal-delay-1">Treballem amb<br />Intel·ligència Artificial</h2>
             <p style={{ fontSize: '16px', color: 'var(--text-2)', lineHeight: 1.75, marginBottom: '20px' }}>La IA ha transformat la manera de crear i gestionar presències digitals. Integrem les últimes eines per oferir resultats més ràpids, intel·ligents i efectius per al teu negoci.</p>
             <p style={{ fontSize: '16px', color: 'var(--text-2)', lineHeight: 1.75, marginBottom: '32px' }}>Des de la generació de continguts fins a l&apos;optimització SEO automàtica, passant per chatbots i assistents virtuals a mida.</p>
             <a href="#contact" className="btn-primary">Explora les possibilitats</a>
@@ -370,13 +378,15 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* PRODUCTES PROPIS */}
       <section className="products-section">
         <div className="products-inner">
+          <ScrollReveal>
           <div className="products-header">
-            <div className="section-label">Projectes propis</div>
+            <div className="section-label reveal">Projectes propis</div>
             <h2 className="section-title">SaaS que hem<br />construït nosaltres</h2>
             <p style={{ fontSize: '16px', color: 'var(--text-2)', lineHeight: 1.75, maxWidth: '560px', marginTop: '16px' }}>A més de crear webs per a clients, desenvolupem les nostres pròpies plataformes digitals. Dos exemples del que som capaços de construir.</p>
           </div>
@@ -414,10 +424,12 @@ export default function HomePage() {
               </div>
             </div>
           </div>
+          </ScrollReveal>
         </div>
       </section>
 
       {/* STATS / NOSALTRES */}
+      <ScrollReveal>
       <section className="stats-section" id="nosaltres">
         <div className="stats-big">
           <div className="stat-block"><div className="num">+20</div><div className="desc">Anys d&apos;experiència a Internet</div></div>
@@ -425,20 +437,22 @@ export default function HomePage() {
           <div className="stat-block"><div className="num">∞</div><div className="desc">Dedicació i suport al teu projecte</div></div>
         </div>
         <div className="stats-text">
-          <div className="section-label">Nosaltres</div>
-          <h2 className="section-title">Experiència que<br />es nota</h2>
+          <div className="section-label reveal">Nosaltres</div>
+          <h2 className="section-title reveal reveal-delay-1">Experiència que<br />es nota</h2>
           <p>Hem ajudat a desenes d&apos;empreses a créixer i consolidar la seva presència online. Treballem de tu a tu, amb una comunicació activa i transparent en tot moment.</p>
           <p>No som una agència gran ni anònima. Cada projecte rep la nostra atenció total perquè cada client és important per a nosaltres.</p>
           <a href="#contact" className="btn-primary">Explica&apos;ns el teu projecte</a>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* MARKETING SECTION */}
       <section className="marketing-section" id="marketing">
+        <ScrollReveal>
         <div className="marketing-inner">
           <div>
-            <div className="section-label">Màrqueting Online</div>
-            <h2 className="section-title">Fem créixer<br />el teu negoci<br />a les xarxes</h2>
+            <div className="section-label reveal">Màrqueting Online</div>
+            <h2 className="section-title reveal reveal-delay-1">Fem créixer<br />el teu negoci<br />a les xarxes</h2>
             <p style={{ fontSize: '16px', color: 'var(--text-2)', lineHeight: 1.75, marginBottom: '16px' }}>Gestionem la teva presència digital de cap a peus: xarxes socials, publicitat, SEO i sistemes CRM per captar clients nous cada mes.</p>
             <p style={{ fontSize: '16px', color: 'var(--text-2)', lineHeight: 1.75, marginBottom: '36px' }}>Des d&apos;estratègies de continguts a campanyes de paid media, t&apos;ajudem a convertir seguidors en clients i a mesurar cada resultat.</p>
             <div className="mktg-features">
@@ -548,24 +562,27 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* LOCAL SEO */}
       <section className="local-section" aria-label="Pàgines web locals">
+        <ScrollReveal>
         <div className="local-inner">
-          <div className="local-block">
+          <div className="local-block reveal">
             <span className="local-tag">Cardedeu · Vallès Oriental</span>
             <h3>Pàgines web a Cardedeu</h3>
             <p>Si tens un negoci a Cardedeu i vols tenir presència a Internet, som el teu soci digital de confiança. Creem pàgines web professionals per a comerços, serveis i empreses locals.</p>
             <p>Coneixem el mercat local. Una web que parla directament als teus clients i que apareix als resultats de cerca quan et busquen.</p>
           </div>
-          <div className="local-block">
+          <div className="local-block reveal reveal-delay-1">
             <span className="local-tag">Sant Pere i Sant Antoni de Vilamajor</span>
             <h3>Pàgines web a Vilamajor</h3>
             <p>Treballem amb empreses i autònoms de Vilamajor que volen donar el salt digital. Una web ben feta és la millor carta de presentació per als teus clients potencials.</p>
             <p>Dissenyem, programem i posicionem la teva pàgina web perquè apareguis als resultats de cerca a la zona.</p>
           </div>
         </div>
+        </ScrollReveal>
       </section>
 
       {/* FAQ (client component) */}
@@ -625,42 +642,42 @@ export default function HomePage() {
           <h2 className="section-title">Recursos i consells per al teu negoci digital</h2>
           <p className="section-sub">Articles pràctics sobre disseny web, programació i com fer créixer la teva empresa en línia.</p>
           <div className="blog-grid">
-            <a href="/blog/disseny-pagines-web" className="blog-card">
+            <Link href="/blog/disseny-pagines-web" className="blog-card">
               <div className="blog-card-tag">Disseny Web</div>
               <h3 className="blog-card-title">Disseny de pàgines web: com crear un lloc que converteixi visitants en clients</h3>
               <p className="blog-card-desc">Un bon disseny web va molt més enllà de l&apos;estètica. Descobreix els principis clau per crear una pàgina que transmeti confiança, sigui fàcil de navegar i generi resultats reals per al teu negoci.</p>
               <span className="blog-card-link">Llegir article →</span>
-            </a>
-            <a href="/blog/programacio-pagines-web" className="blog-card">
+            </Link>
+            <Link href="/blog/programacio-pagines-web" className="blog-card">
               <div className="blog-card-tag">Programació</div>
               <h3 className="blog-card-title">Programació de pàgines web: per què importa la tecnologia que hi ha darrere</h3>
               <p className="blog-card-desc">La programació és l&apos;esquelet invisible que determina si la teva web carrega ràpid, és segura i apareix a Google. T&apos;expliquem tot el que has de saber abans de fer el teu projecte web.</p>
               <span className="blog-card-link">Llegir article →</span>
-            </a>
-            <a href="/blog/fer-creixer-negoci-online" className="blog-card">
+            </Link>
+            <Link href="/blog/fer-creixer-negoci-online" className="blog-card">
               <div className="blog-card-tag">Creixement Digital</div>
               <h3 className="blog-card-title">Com fer créixer el teu negoci amb una pàgina web ben posicionada</h3>
               <p className="blog-card-desc">Tenir una web no és suficient: necessites que et trobin. Coneix les estratègies de SEO local, màrqueting de continguts i conversió per transformar la teva presència digital en clients reals.</p>
               <span className="blog-card-link">Llegir article →</span>
-            </a>
-            <a href="/blog/seo-local-pimes" className="blog-card">
+            </Link>
+            <Link href="/blog/seo-local-pimes" className="blog-card">
               <div className="blog-card-tag">SEO Local</div>
               <h3 className="blog-card-title">SEO local per a PIMES: com aparèixer a Google Maps i captar clients propers</h3>
               <p className="blog-card-desc">Guia pràctica per millorar la teva visibilitat local: fitxa de Google Business Profile, ressenyes, paraules clau geolocalitzades i accions que et poden portar més contactes reals.</p>
               <span className="blog-card-link">Llegir article →</span>
-            </a>
-            <a href="/blog/nintai-cat-gestio-fiscal-autonoms" className="blog-card">
+            </Link>
+            <Link href="/blog/nintai-cat-gestio-fiscal-autonoms" className="blog-card">
               <div className="blog-card-tag" style={{ background: 'rgba(74,222,128,0.1)', color: '#4ade80' }}>Projecte propi · Llançament</div>
               <h3 className="blog-card-title">Nintai.cat: la gestió fiscal per a autònoms catalans que esperàveu</h3>
               <p className="blog-card-desc">Hem llançat Nintai.cat, una plataforma SaaS de gestió fiscal amb facturació, control de despeses, resum trimestral automàtic i jul_IA_, una assessora virtual fiscal en català disponible 24/7.</p>
               <span className="blog-card-link">Llegir article →</span>
-            </a>
-            <a href="/blog/docentclip-cat-plataforma-docents-ia" className="blog-card">
+            </Link>
+            <Link href="/blog/docentclip-cat-plataforma-docents-ia" className="blog-card">
               <div className="blog-card-tag" style={{ background: 'rgba(129,140,248,0.1)', color: '#818cf8' }}>Projecte propi · Llançament</div>
               <h3 className="blog-card-title">DocentClip.cat: de la nota de veu a l&apos;informe educatiu en un clic</h3>
               <p className="blog-card-desc">Hem creat DocentClip.cat, la plataforma per a docents de Catalunya que transforma notes de veu i entrevistes familiars en informes educatius llestos per compartir gràcies a la IA.</p>
               <span className="blog-card-link">Llegir article →</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -671,19 +688,19 @@ export default function HomePage() {
           <p className="experts-label">Som experts en</p>
           <div className="experts-logos">
             <div className="experts-logo-item">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" alt="WordPress" className="experts-img" style={{ height: '34px' }} />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/0/09/Wordpress-Logo.svg" alt="WordPress" className="experts-img" width={120} height={34} style={{ height: '34px', width: 'auto' }} />
             </div>
             <div className="experts-logo-item">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/WooCommerce_logo.svg" alt="WooCommerce" className="experts-img" style={{ height: '26px' }} />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/2/2a/WooCommerce_logo.svg" alt="WooCommerce" className="experts-img" width={120} height={26} style={{ height: '26px', width: 'auto' }} />
             </div>
             <div className="experts-logo-item">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="experts-img" style={{ height: '30px' }} />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Ads_logo.svg" alt="Google Ads" className="experts-img" width={120} height={30} style={{ height: '30px', width: 'auto' }} />
             </div>
             <div className="experts-logo-item">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="experts-img" style={{ height: '24px' }} />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" className="experts-img" width={120} height={24} style={{ height: '24px', width: 'auto' }} />
             </div>
             <div className="experts-logo-item">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg" alt="Claude" className="experts-img" style={{ height: '24px' }} />
+              <Image src="https://upload.wikimedia.org/wikipedia/commons/7/78/Anthropic_logo.svg" alt="Claude" className="experts-img" width={120} height={24} style={{ height: '24px', width: 'auto' }} />
             </div>
           </div>
         </div>

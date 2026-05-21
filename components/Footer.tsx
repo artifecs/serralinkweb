@@ -12,10 +12,10 @@ export default function Footer() {
             <a href="tel:+34650752356">650 75 23 56</a>
           </div>
           <div className="footer-legal">
-            <a href="/#serveis">Serveis</a>
-            <a href="/#projectes">Projectes</a>
-            <a href="/#contact">Contacte</a>
-            <a href="/#blog">Blog</a>
+            <Link href="/#serveis">Serveis</Link>
+            <Link href="/#projectes">Projectes</Link>
+            <Link href="/#contact">Contacte</Link>
+            <Link href="/blog/seo-local-pimes">Blog</Link>
           </div>
         </div>
       </div>
