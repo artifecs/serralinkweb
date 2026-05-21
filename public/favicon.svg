@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#162229"/>
+      <stop offset="100%" stop-color="#1a4a40"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+  <!-- Subtle inner highlight at top -->
+  <rect x="1" y="1" width="30" height="15" rx="7" fill="white" opacity="0.04"/>
+  <!-- "S" lettermark -->
+  <text
+    x="16" y="23"
+    font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="22"
+    fill="#00D9A3"
+    text-anchor="middle"
+    filter="url(#glow)"
+  >S</text>
+</svg>

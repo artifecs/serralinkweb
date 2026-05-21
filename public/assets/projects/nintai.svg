@@ -1,0 +1,112 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background app -->
+  <rect width="1440" height="900" fill="#f4f7f4"/>
+
+  <!-- ===== NAV ===== -->
+  <rect width="1440" height="62" fill="#ffffff"/>
+  <line x1="0" y1="62" x2="1440" y2="62" stroke="#e0e8e0" stroke-width="1"/>
+  <text x="72" y="40" font-size="22" font-weight="900" fill="#1a3d2b" letter-spacing="-0.5" font-family="Georgia, serif">nintai</text>
+  <text x="120" y="40" font-size="22" font-weight="900" fill="#3d8b5e" letter-spacing="-0.5" font-family="Georgia, serif">.cat</text>
+  <text x="650" y="40" font-size="13.5" fill="#555" font-weight="500">Inici</text>
+  <text x="700" y="40" font-size="13.5" fill="#555" font-weight="500">Funcions</text>
+  <text x="776" y="40" font-size="13.5" fill="#555" font-weight="500">Preus</text>
+  <text x="825" y="40" font-size="13.5" fill="#555" font-weight="500">Sobre nosaltres</text>
+  <rect x="1280" y="15" width="80" height="32" rx="16" fill="#2d6b3e"/>
+  <text x="1320" y="36" font-size="13" fill="white" text-anchor="middle" font-weight="600">Prova 5 dies</text>
+  <text x="1200" y="40" font-size="13.5" fill="#2d6b3e" font-weight="600">Entrar</text>
+
+  <!-- ===== HERO ===== -->
+  <rect x="0" y="63" width="1440" height="340" fill="#f0f7f1"/>
+  <text x="72" y="155" font-size="52" font-weight="900" fill="#1a3d2b" letter-spacing="-2" font-family="Georgia, serif">Gestió fiscal senzilla</text>
+  <text x="72" y="213" font-size="52" font-weight="900" fill="#3d8b5e" letter-spacing="-2" font-family="Georgia, serif">per a autònoms</text>
+  <text x="72" y="265" font-size="17" fill="#4a6a55">Factures, despeses i resum fiscal trimestral.</text>
+  <text x="72" y="288" font-size="17" fill="#4a6a55">Amb jul_IA_, la teva assessora virtual en català, 24/7.</text>
+  <rect x="72" y="310" width="196" height="48" rx="24" fill="#2d6b3e"/>
+  <text x="170" y="340" font-size="14" fill="white" text-anchor="middle" font-weight="700">Comença gratis →</text>
+  <rect x="280" y="310" width="176" height="48" rx="24" fill="none" stroke="#2d6b3e" stroke-width="2"/>
+  <text x="368" y="340" font-size="14" fill="#2d6b3e" text-anchor="middle" font-weight="600">Veure preus</text>
+
+  <!-- Hero right: dashboard preview -->
+  <rect x="720" y="75" width="660" height="318" rx="14" fill="#ffffff" stroke="#e0e8e0" stroke-width="1"/>
+  <!-- mini nav dins dashboard -->
+  <rect x="720" y="75" width="660" height="38" rx="0" fill="#1a3d2b"/>
+  <rect x="720" y="75" width="660" height="38" rx="14" fill="#1a3d2b"/>
+  <rect x="720" y="89" width="660" height="24" fill="#1a3d2b"/>
+  <text x="744" y="99" font-size="12" fill="rgba(255,255,255,0.8)" font-weight="700">nintai</text>
+  <text x="820" y="99" font-size="11" fill="rgba(255,255,255,0.5)">Factures</text>
+  <text x="878" y="99" font-size="11" fill="rgba(255,255,255,0.5)">Despeses</text>
+  <text x="944" y="99" font-size="11" fill="rgba(255,255,255,0.5)">Fiscal</text>
+  <text x="995" y="99" font-size="11" fill="rgba(255,255,255,0.5)">jul_IA_</text>
+  <!-- Dashboard stats row -->
+  <rect x="740" y="124" width="185" height="80" rx="10" fill="#f0f7f1" stroke="#d4e8d8" stroke-width="1"/>
+  <text x="752" y="148" font-size="10" fill="#4a6a55" font-weight="700" letter-spacing="0.5">FACTURATS (MES)</text>
+  <text x="752" y="178" font-size="26" font-weight="900" fill="#1a3d2b" letter-spacing="-1">4.280 €</text>
+  <text x="752" y="197" font-size="10" fill="#2d6b3e">↑ +12% vs mes anterior</text>
+  <rect x="940" y="124" width="185" height="80" rx="10" fill="#f0f7f1" stroke="#d4e8d8" stroke-width="1"/>
+  <text x="952" y="148" font-size="10" fill="#4a6a55" font-weight="700" letter-spacing="0.5">DESPESES (MES)</text>
+  <text x="952" y="178" font-size="26" font-weight="900" fill="#1a3d2b" letter-spacing="-1">1.140 €</text>
+  <text x="952" y="197" font-size="10" fill="#e57373">↓ -3% vs mes anterior</text>
+  <rect x="1140" y="124" width="222" height="80" rx="10" fill="#2d6b3e"/>
+  <text x="1152" y="148" font-size="10" fill="rgba(255,255,255,0.7)" font-weight="700" letter-spacing="0.5">BENEFICI NET</text>
+  <text x="1152" y="178" font-size="26" font-weight="900" fill="white" letter-spacing="-1">3.140 €</text>
+  <text x="1152" y="197" font-size="10" fill="rgba(255,255,255,0.7)">Flux net positiu ✓</text>
+  <!-- Factures list -->
+  <text x="740" y="234" font-size="12" font-weight="700" fill="#1a3d2b">Darreres factures</text>
+  <rect x="740" y="244" width="600" height="32" rx="6" fill="#f8fbf8"/>
+  <text x="752" y="265" font-size="11" fill="#1a3d2b" font-weight="600">Factura #2024-031</text>
+  <text x="980" y="265" font-size="11" fill="#4a6a55">Disseny gràfic</text>
+  <text x="1200" y="265" font-size="11" fill="#2d6b3e" font-weight="700">850 €</text>
+  <rect x="1300" y="251" width="38" height="18" rx="9" fill="rgba(45,107,62,0.12)"/>
+  <text x="1319" y="264" font-size="9" fill="#2d6b3e" text-anchor="middle" font-weight="700">Cobrat</text>
+  <rect x="740" y="280" width="600" height="32" rx="6" fill="#ffffff"/>
+  <text x="752" y="301" font-size="11" fill="#1a3d2b" font-weight="600">Factura #2024-030</text>
+  <text x="980" y="301" font-size="11" fill="#4a6a55">Consultoria web</text>
+  <text x="1200" y="301" font-size="11" fill="#2d6b3e" font-weight="700">1.200 €</text>
+  <rect x="1300" y="287" width="38" height="18" rx="9" fill="rgba(245,158,11,0.12)"/>
+  <text x="1319" y="300" font-size="9" fill="#d97706" text-anchor="middle" font-weight="700">Pendent</text>
+  <rect x="740" y="316" width="600" height="32" rx="6" fill="#f8fbf8"/>
+  <text x="752" y="337" font-size="11" fill="#1a3d2b" font-weight="600">Factura #2024-029</text>
+  <text x="980" y="337" font-size="11" fill="#4a6a55">Manteniment</text>
+  <text x="1200" y="337" font-size="11" fill="#2d6b3e" font-weight="700">320 €</text>
+  <rect x="1300" y="323" width="38" height="18" rx="9" fill="rgba(45,107,62,0.12)"/>
+  <text x="1319" y="336" font-size="9" fill="#2d6b3e" text-anchor="middle" font-weight="700">Cobrat</text>
+
+  <!-- ===== jul_IA_ section ===== -->
+  <rect x="0" y="403" width="1440" height="240" fill="#1a3d2b"/>
+  <text x="72" y="480" font-size="38" font-weight="900" fill="white" letter-spacing="-1" font-family="Georgia, serif">jul_IA_, la teva assessora fiscal</text>
+  <text x="72" y="520" font-size="17" fill="rgba(255,255,255,0.65)">Resol dubtes fiscals en català, disponible 24h. Inclosa en el pla Més + IA.</text>
+  <!-- Chat bubble mockup -->
+  <rect x="800" y="420" width="560" height="200" rx="14" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <rect x="820" y="440" width="300" height="40" rx="20" fill="rgba(255,255,255,0.12)"/>
+  <text x="840" y="466" font-size="13" fill="white">Quan haig de presentar el model 303?</text>
+  <rect x="920" y="495" width="380" height="55" rx="14" fill="#3d8b5e"/>
+  <text x="940" y="517" font-size="12" fill="white">El model 303 es presenta trimestralment.</text>
+  <text x="940" y="535" font-size="12" fill="rgba(255,255,255,0.8)">El proper termini és el 20 d'octubre. 📅</text>
+  <text x="830" y="566" font-size="10" fill="rgba(255,255,255,0.4)">jul_IA_ · Assessora virtual de Nintai</text>
+
+  <!-- ===== PREUS section ===== -->
+  <rect x="0" y="643" width="1440" height="257" fill="#f4f7f4"/>
+  <text x="720" y="700" font-size="32" font-weight="900" fill="#1a3d2b" text-anchor="middle" letter-spacing="-1" font-family="Georgia, serif">Plans senzills, sense sorpreses</text>
+
+  <!-- Pla Calma -->
+  <rect x="200" y="720" width="300" height="120" rx="14" fill="white" stroke="#d4e8d8" stroke-width="1"/>
+  <text x="350" y="752" font-size="14" font-weight="700" fill="#1a3d2b" text-anchor="middle">Calma</text>
+  <text x="350" y="782" font-size="28" font-weight="900" fill="#2d6b3e" text-anchor="middle">7,99 €<tspan font-size="13" font-weight="400" fill="#4a6a55">/mes</tspan></text>
+  <text x="350" y="806" font-size="12" fill="#4a6a55" text-anchor="middle">Factures + despeses + fiscal</text>
+
+  <!-- Pla Més + IA (destacat) -->
+  <rect x="570" y="710" width="300" height="140" rx="14" fill="#2d6b3e"/>
+  <rect x="620" y="696" width="200" height="22" rx="11" fill="#f0b800"/>
+  <text x="720" y="712" font-size="11" fill="#1a3d2b" text-anchor="middle" font-weight="700">⭐ Més popular</text>
+  <text x="720" y="750" font-size="14" font-weight="700" fill="white" text-anchor="middle">Més + IA</text>
+  <text x="720" y="782" font-size="28" font-weight="900" fill="white" text-anchor="middle">12,99 €<tspan font-size="13" font-weight="400" fill="rgba(255,255,255,0.7)">/mes</tspan></text>
+  <text x="720" y="806" font-size="12" fill="rgba(255,255,255,0.75)" text-anchor="middle">Tot + jul_IA_ il·limitada</text>
+  <text x="720" y="826" font-size="11" fill="rgba(255,255,255,0.5)" text-anchor="middle">5 dies de prova gratuïts</text>
+
+  <!-- Pla Equip -->
+  <rect x="940" y="720" width="300" height="120" rx="14" fill="white" stroke="#d4e8d8" stroke-width="1"/>
+  <text x="1090" y="752" font-size="14" font-weight="700" fill="#1a3d2b" text-anchor="middle">Equip</text>
+  <text x="1090" y="782" font-size="28" font-weight="900" fill="#2d6b3e" text-anchor="middle">A mida</text>
+  <text x="1090" y="806" font-size="12" fill="#4a6a55" text-anchor="middle">Per a equips i assessories</text>
+</svg>

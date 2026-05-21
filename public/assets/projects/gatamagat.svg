@@ -1,0 +1,128 @@
+<svg width="1440" height="820" viewBox="0 0 1440 820" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- ===== NAV ===== -->
+  <rect width="1440" height="62" fill="#faf8ee"/>
+  <line x1="0" y1="62" x2="1440" y2="62" stroke="#e8e2cc" stroke-width="1"/>
+
+  <!-- Logo: GATAMAGAT CAT -->
+  <text x="72" y="42" font-size="26" font-weight="900" fill="#1a2e3b" letter-spacing="-0.5" font-family="Georgia, serif">GAT</text>
+  <text x="127" y="42" font-size="26" font-weight="900" fill="#f0b800" letter-spacing="-0.5" font-family="Georgia, serif">A</text>
+  <text x="147" y="42" font-size="26" font-weight="900" fill="#1a2e3b" letter-spacing="-0.5" font-family="Georgia, serif">MAGAT</text>
+  <text x="258" y="42" font-size="17" font-weight="700" fill="#1a2e3b" letter-spacing="1" font-family="Georgia, serif">CAT</text>
+
+  <!-- Nav links centered -->
+  <text x="560" y="40" font-size="13.5" fill="#1a2e3b" font-weight="700" letter-spacing="0.5">BOTIGA</text>
+  <text x="631" y="40" font-size="10" fill="#1a2e3b">▾</text>
+  <text x="660" y="40" font-size="13.5" fill="#1a2e3b" font-weight="700" letter-spacing="0.5">BLOG</text>
+  <text x="718" y="40" font-size="13.5" fill="#1a2e3b" font-weight="700" letter-spacing="0.5">NOSALTRES</text>
+  <text x="830" y="40" font-size="13.5" fill="#1a2e3b" font-weight="700" letter-spacing="0.5">CONTACTE</text>
+
+  <!-- Right icons -->
+  <!-- Instagram icon -->
+  <rect x="1260" y="18" width="24" height="24" rx="6" fill="none" stroke="#1a2e3b" stroke-width="1.5"/>
+  <circle cx="1272" cy="30" r="5" fill="none" stroke="#1a2e3b" stroke-width="1.5"/>
+  <circle cx="1279" cy="23" r="1.5" fill="#1a2e3b"/>
+  <!-- Search icon -->
+  <circle cx="1310" cy="29" r="7" fill="none" stroke="#1a2e3b" stroke-width="1.5"/>
+  <line x1="1315" y1="34" x2="1322" y2="41" stroke="#1a2e3b" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- User icon -->
+  <circle cx="1351" cy="25" r="5" fill="none" stroke="#1a2e3b" stroke-width="1.5"/>
+  <path d="M1340 42c0-6 5-9 11-9s11 3 11 9" fill="none" stroke="#1a2e3b" stroke-width="1.5"/>
+  <!-- Cart icon -->
+  <path d="M1382 22h-4l-4 14h18l-4-14h-4" fill="none" stroke="#1a2e3b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1382" cy="39" r="2" fill="#1a2e3b"/>
+  <circle cx="1390" cy="39" r="2" fill="#1a2e3b"/>
+  <!-- Cart badge -->
+  <circle cx="1396" cy="20" r="7" fill="#f0b800"/>
+  <text x="1396" y="24" font-size="9" fill="#1a2e3b" text-anchor="middle" font-weight="700">1</text>
+
+  <!-- ===== HERO: photo collage grid with dark overlay ===== -->
+  <!-- Grid background: 4x2 of photo rectangles -->
+  <!-- Row 1 -->
+  <rect x="0" y="63" width="360" height="355" fill="#4a5a6a"/>
+  <rect x="360" y="63" width="360" height="355" fill="#3a4a52"/>
+  <rect x="720" y="63" width="360" height="355" fill="#5a6a74"/>
+  <rect x="1080" y="63" width="360" height="355" fill="#4a5060"/>
+  <!-- Row 2 -->
+  <rect x="0" y="418" width="360" height="290" fill="#3d4a56"/>
+  <rect x="360" y="418" width="360" height="290" fill="#4e5a68"/>
+  <rect x="720" y="418" width="360" height="290" fill="#3a4e5a"/>
+  <rect x="1080" y="418" width="360" height="290" fill="#506070"/>
+
+  <!-- Subtle photo content hints (silhouettes/shapes) -->
+  <!-- Person with socks (top left) -->
+  <ellipse cx="180" cy="260" rx="50" ry="80" fill="rgba(200,180,150,0.3)"/>
+  <rect x="140" y="320" width="30" height="80" fill="rgba(240,200,80,0.5)" rx="4"/>
+  <rect x="185" y="320" width="30" height="80" fill="rgba(240,200,80,0.5)" rx="4"/>
+
+  <!-- T-shirt text glimpse (top right) -->
+  <text x="1160" y="250" font-size="28" font-weight="900" fill="rgba(255,255,255,0.25)" transform="rotate(-5,1160,250)">CATALA</text>
+
+  <!-- Person wearing t-shirt (bottom center) -->
+  <ellipse cx="788" cy="560" rx="60" ry="100" fill="rgba(220,210,190,0.2)"/>
+  <text x="760" y="530" font-size="14" fill="rgba(255,255,255,0.2)" font-weight="700">SOBREVIURE</text>
+  <text x="755" y="548" font-size="14" fill="rgba(255,255,255,0.2)" font-weight="700">CATALÀ</text>
+
+  <!-- Dark semi-transparent overlay on entire hero -->
+  <rect x="0" y="63" width="1440" height="645" fill="rgba(15,25,35,0.55)"/>
+
+  <!-- Cat emoji centered -->
+  <text x="720" y="220" font-size="52" text-anchor="middle">🐱</text>
+
+  <!-- Hero headline -->
+  <text x="720" y="310" font-size="64" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-1.5" font-family="Georgia, serif">Samarretes catalanes</text>
+  <text x="720" y="385" font-size="64" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-1.5" font-family="Georgia, serif">amb un toc diferent</text>
+
+  <!-- Subheadline -->
+  <text x="720" y="440" font-size="20" fill="rgba(255,255,255,0.85)" text-anchor="middle" letter-spacing="0.3">per dibuixar-te un somriure</text>
+
+  <!-- CTA buttons -->
+  <rect x="498" y="472" width="264" height="54" rx="27" fill="white"/>
+  <text x="630" y="505" font-size="15" fill="#1a2e3b" text-anchor="middle" font-weight="700">Descobreix les samarretes</text>
+
+  <rect x="784" y="472" width="210" height="54" rx="27" fill="none" stroke="white" stroke-width="2"/>
+  <text x="889" y="505" font-size="15" fill="white" text-anchor="middle" font-weight="700">La nostra història</text>
+
+  <!-- Scroll indicator -->
+  <text x="720" y="598" font-size="11" fill="rgba(255,255,255,0.55)" text-anchor="middle" letter-spacing="2.5" font-weight="600">DESCOBREIX MÉS</text>
+  <!-- Down arrow -->
+  <polyline points="710,612 720,624 730,612" fill="none" stroke="rgba(255,255,255,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ===== BOTTOM COLORED STRIPE (senyera colors) ===== -->
+  <rect x="0" y="708" width="360" height="9" fill="#c00"/>
+  <rect x="360" y="708" width="360" height="9" fill="#f0b800"/>
+  <rect x="720" y="708" width="360" height="9" fill="#c00"/>
+  <rect x="1080" y="708" width="360" height="9" fill="#f0b800"/>
+
+  <!-- ===== TRUST BAR ===== -->
+  <rect x="0" y="717" width="1440" height="103" fill="#faf8ee"/>
+
+  <!-- Trust item 1: Enviament gratuït -->
+  <circle cx="186" cy="764" r="24" fill="#f0b800" opacity="0.25"/>
+  <circle cx="186" cy="764" r="18" fill="#f0b800"/>
+  <text x="186" y="770" font-size="16" text-anchor="middle">🚚</text>
+  <text x="226" y="756" font-size="14" fill="#1a2e3b" font-weight="700">Enviament gratuït</text>
+  <text x="226" y="775" font-size="12" fill="#6a7a80">A partir de 50€ als Països Catalans</text>
+
+  <!-- Trust item 2: 30 dies -->
+  <circle cx="546" cy="764" r="24" fill="#f0b800" opacity="0.25"/>
+  <circle cx="546" cy="764" r="18" fill="#f0b800"/>
+  <text x="546" y="770" font-size="16" text-anchor="middle">↩</text>
+  <text x="586" y="756" font-size="14" fill="#1a2e3b" font-weight="700">30 dies per tornar</text>
+  <text x="586" y="775" font-size="12" fill="#6a7a80">Devolucions sense preguntes</text>
+
+  <!-- Trust item 3: Cotó orgànic -->
+  <circle cx="906" cy="764" r="24" fill="#f0b800" opacity="0.25"/>
+  <circle cx="906" cy="764" r="18" fill="#f0b800"/>
+  <text x="906" y="770" font-size="16" text-anchor="middle">🌿</text>
+  <text x="946" y="756" font-size="14" fill="#1a2e3b" font-weight="700">Cotó orgànic GOTS</text>
+  <text x="946" y="775" font-size="12" fill="#6a7a80">Certificació internacional</text>
+
+  <!-- Trust item 4: Pagament segur -->
+  <circle cx="1254" cy="764" r="24" fill="#f0b800" opacity="0.25"/>
+  <circle cx="1254" cy="764" r="18" fill="#f0b800"/>
+  <text x="1254" y="770" font-size="16" text-anchor="middle">🔒</text>
+  <text x="1294" y="756" font-size="14" fill="#1a2e3b" font-weight="700">Pagament segur</text>
+  <text x="1294" y="775" font-size="12" fill="#6a7a80">Stripe SSL protegit</text>
+
+</svg>

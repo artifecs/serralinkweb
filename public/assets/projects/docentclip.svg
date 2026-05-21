@@ -1,0 +1,143 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="1440" height="900" fill="#f5f6ff"/>
+
+  <!-- ===== NAV ===== -->
+  <rect width="1440" height="62" fill="#ffffff"/>
+  <line x1="0" y1="62" x2="1440" y2="62" stroke="#e4e6f0" stroke-width="1"/>
+  <!-- Logo -->
+  <rect x="72" y="18" width="32" height="32" rx="8" fill="#4f46e5"/>
+  <text x="88" y="39" font-size="16" fill="white" text-anchor="middle" font-weight="900">D</text>
+  <text x="114" y="41" font-size="18" font-weight="800" fill="#1e1b4b" letter-spacing="-0.3">DocentClip</text>
+  <text x="218" y="41" font-size="18" font-weight="800" fill="#4f46e5" letter-spacing="-0.3">.cat</text>
+  <!-- Nav links -->
+  <text x="680" y="40" font-size="13.5" fill="#555" font-weight="500">Funcions</text>
+  <text x="748" y="40" font-size="13.5" fill="#555" font-weight="500">Per a qui?</text>
+  <text x="822" y="40" font-size="13.5" fill="#555" font-weight="500">Preus</text>
+  <text x="870" y="40" font-size="13.5" fill="#555" font-weight="500">Blog</text>
+  <rect x="1270" y="14" width="100" height="34" rx="17" fill="#4f46e5"/>
+  <text x="1320" y="36" font-size="13" fill="white" text-anchor="middle" font-weight="600">Prova gratis</text>
+  <text x="1200" y="40" font-size="13.5" fill="#4f46e5" font-weight="600">Entrar</text>
+
+  <!-- ===== HERO ===== -->
+  <rect x="0" y="63" width="1440" height="360" fill="#eef0ff"/>
+  <!-- Badge -->
+  <rect x="72" y="100" width="220" height="26" rx="13" fill="rgba(79,70,229,0.1)"/>
+  <text x="182" y="118" font-size="12" fill="#4f46e5" text-anchor="middle" font-weight="700">🎙 IA per a docents de Catalunya</text>
+
+  <text x="72" y="172" font-size="50" font-weight="900" fill="#1e1b4b" letter-spacing="-2" font-family="Georgia, serif">De la nota de veu</text>
+  <text x="72" y="230" font-size="50" font-weight="900" fill="#4f46e5" letter-spacing="-2" font-family="Georgia, serif">a l'informe en un clic</text>
+  <text x="72" y="278" font-size="17" fill="#4a4a7a">Transcriu observacions d'aula, entrevistes familiars i</text>
+  <text x="72" y="300" font-size="17" fill="#4a4a7a">anotacions ràpides. La IA les organitza per tu.</text>
+
+  <rect x="72" y="324" width="210" height="50" rx="25" fill="#4f46e5"/>
+  <text x="177" y="355" font-size="15" fill="white" text-anchor="middle" font-weight="700">Comença gratis →</text>
+  <text x="305" y="355" font-size="14" fill="#4f46e5" font-weight="600">Veure demo ▶</text>
+
+  <!-- Hero right: app mockup -->
+  <rect x="760" y="76" width="608" height="336" rx="16" fill="white" stroke="#e4e6f0" stroke-width="1" filter="url(#shadow)"/>
+  <!-- App top bar -->
+  <rect x="760" y="76" width="608" height="44" rx="16" fill="#4f46e5"/>
+  <rect x="760" y="96" width="608" height="24" fill="#4f46e5"/>
+  <circle cx="784" cy="98" r="6" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="804" cy="98" r="6" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="824" cy="98" r="6" fill="rgba(255,255,255,0.3)"/>
+  <text x="900" y="103" font-size="12" fill="rgba(255,255,255,0.7)" font-weight="600">DocentClip — Les meves notes</text>
+
+  <!-- Sidebar -->
+  <rect x="760" y="120" width="160" height="292" fill="#f8f8ff"/>
+  <text x="780" y="150" font-size="11" fill="#4f46e5" font-weight="700" letter-spacing="0.5">MENÚ</text>
+  <rect x="770" y="158" width="140" height="28" rx="8" fill="#4f46e5"/>
+  <text x="790" y="177" font-size="12" fill="white" font-weight="600">🎙 Notes de veu</text>
+  <text x="790" y="208" font-size="12" fill="#6b7280">👨‍👩‍👧 Entrevistes</text>
+  <text x="790" y="232" font-size="12" fill="#6b7280">📄 Informes</text>
+  <text x="790" y="256" font-size="12" fill="#6b7280">📅 Calendari</text>
+  <text x="790" y="280" font-size="12" fill="#6b7280">🏷 Etiquetes</text>
+  <line x1="760" y1="300" x2="920" y2="300" stroke="#e4e6f0" stroke-width="1"/>
+  <text x="780" y="322" font-size="11" fill="#9ca3af">6,90 €/mes</text>
+  <rect x="770" y="332" width="140" height="26" rx="13" fill="rgba(79,70,229,0.1)"/>
+  <text x="840" y="349" font-size="11" fill="#4f46e5" text-anchor="middle" font-weight="600">Gestionar compte</text>
+
+  <!-- Main content area -->
+  <text x="940" y="148" font-size="14" font-weight="700" fill="#1e1b4b">Notes recents</text>
+  <!-- Note card 1 -->
+  <rect x="930" y="158" width="420" height="70" rx="10" fill="#f5f6ff" stroke="#e4e6f0" stroke-width="1"/>
+  <rect x="930" y="158" width="4" height="70" rx="2" fill="#4f46e5"/>
+  <text x="950" y="180" font-size="12" font-weight="700" fill="#1e1b4b">Observació aula 3r B — Matemàtiques</text>
+  <text x="950" y="198" font-size="11" fill="#6b7280">La Marta ha mostrat millores en fraccions...</text>
+  <rect x="1220" y="165" width="50" height="18" rx="9" fill="rgba(79,70,229,0.1)"/>
+  <text x="1245" y="178" font-size="9" fill="#4f46e5" text-anchor="middle" font-weight="700">Transcrit</text>
+  <text x="950" y="218" font-size="10" fill="#9ca3af">Avui, 10:32 · 2m 14s</text>
+  <!-- Note card 2 -->
+  <rect x="930" y="238" width="420" height="70" rx="10" fill="white" stroke="#e4e6f0" stroke-width="1"/>
+  <rect x="930" y="238" width="4" height="70" rx="2" fill="#10b981"/>
+  <text x="950" y="260" font-size="12" font-weight="700" fill="#1e1b4b">Entrevista família — Pau Ferrer</text>
+  <text x="950" y="278" font-size="11" fill="#6b7280">Els pares comenten que a casa llegeix més...</text>
+  <rect x="1220" y="245" width="50" height="18" rx="9" fill="rgba(16,185,129,0.1)"/>
+  <text x="1245" y="258" font-size="9" fill="#10b981" text-anchor="middle" font-weight="700">Informe</text>
+  <text x="950" y="298" font-size="10" fill="#9ca3af">Ahir, 16:15 · 28m 00s</text>
+  <!-- Note card 3 -->
+  <rect x="930" y="318" width="420" height="70" rx="10" fill="#f5f6ff" stroke="#e4e6f0" stroke-width="1"/>
+  <rect x="930" y="318" width="4" height="70" rx="2" fill="#f59e0b"/>
+  <text x="950" y="340" font-size="12" font-weight="700" fill="#1e1b4b">Nota ràpida — Conducta pati</text>
+  <text x="950" y="358" font-size="11" fill="#6b7280">Incident entre alumnes resolts correctament...</text>
+  <rect x="1220" y="325" width="62" height="18" rx="9" fill="rgba(245,158,11,0.1)"/>
+  <text x="1251" y="338" font-size="9" fill="#f59e0b" text-anchor="middle" font-weight="700">En procés</text>
+  <text x="950" y="378" font-size="10" fill="#9ca3af">Dilluns, 12:01 · 0m 45s</text>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <rect x="0" y="423" width="1440" height="220" fill="#ffffff"/>
+  <text x="720" y="478" font-size="32" font-weight="900" fill="#1e1b4b" text-anchor="middle" letter-spacing="-1" font-family="Georgia, serif">Com funciona?</text>
+
+  <!-- Step 1 -->
+  <circle cx="300" cy="550" r="28" fill="#eef0ff"/>
+  <text x="300" y="558" font-size="22" text-anchor="middle">🎙</text>
+  <text x="300" y="598" font-size="15" font-weight="700" fill="#1e1b4b" text-anchor="middle">Enregistra</text>
+  <text x="300" y="616" font-size="13" fill="#6b7280" text-anchor="middle">Veu, nota ràpida</text>
+  <text x="300" y="632" font-size="13" fill="#6b7280" text-anchor="middle">o entrevista fins 30'</text>
+
+  <!-- Arrow -->
+  <line x1="380" y1="550" x2="530" y2="550" stroke="#d4d6f0" stroke-width="2"/>
+  <polyline points="522,544 530,550 522,556" fill="none" stroke="#d4d6f0" stroke-width="2"/>
+
+  <!-- Step 2 -->
+  <circle cx="610" cy="550" r="28" fill="#eef0ff"/>
+  <text x="610" y="558" font-size="22" text-anchor="middle">🤖</text>
+  <text x="610" y="598" font-size="15" font-weight="700" fill="#1e1b4b" text-anchor="middle">La IA transcriu</text>
+  <text x="610" y="616" font-size="13" fill="#6b7280" text-anchor="middle">i organitza</text>
+  <text x="610" y="632" font-size="13" fill="#6b7280" text-anchor="middle">automàticament</text>
+
+  <!-- Arrow -->
+  <line x1="690" y1="550" x2="840" y2="550" stroke="#d4d6f0" stroke-width="2"/>
+  <polyline points="832,544 840,550 832,556" fill="none" stroke="#d4d6f0" stroke-width="2"/>
+
+  <!-- Step 3 -->
+  <circle cx="920" cy="550" r="28" fill="#eef0ff"/>
+  <text x="920" y="558" font-size="22" text-anchor="middle">📄</text>
+  <text x="920" y="598" font-size="15" font-weight="700" fill="#1e1b4b" text-anchor="middle">Genera l'informe</text>
+  <text x="920" y="616" font-size="13" fill="#6b7280" text-anchor="middle">Editable, en PDF</text>
+  <text x="920" y="632" font-size="13" fill="#6b7280" text-anchor="middle">i enviable per email</text>
+
+  <!-- Arrow -->
+  <line x1="1000" y1="550" x2="1150" y2="550" stroke="#d4d6f0" stroke-width="2"/>
+  <polyline points="1142,544 1150,550 1142,556" fill="none" stroke="#d4d6f0" stroke-width="2"/>
+
+  <!-- Step 4 -->
+  <circle cx="1230" cy="550" r="28" fill="#4f46e5"/>
+  <text x="1230" y="558" font-size="22" text-anchor="middle">✅</text>
+  <text x="1230" y="598" font-size="15" font-weight="700" fill="#1e1b4b" text-anchor="middle">Comparteix</text>
+  <text x="1230" y="616" font-size="13" fill="#6b7280" text-anchor="middle">Amb famílies</text>
+  <text x="1230" y="632" font-size="13" fill="#6b7280" text-anchor="middle">i equip docent</text>
+
+  <!-- ===== PRICING ===== -->
+  <rect x="0" y="643" width="1440" height="257" fill="#f5f6ff"/>
+  <text x="720" y="696" font-size="30" font-weight="900" fill="#1e1b4b" text-anchor="middle" letter-spacing="-1" font-family="Georgia, serif">Preu únic, tot inclòs</text>
+
+  <rect x="520" y="716" width="400" height="140" rx="16" fill="#4f46e5"/>
+  <text x="720" y="758" font-size="42" font-weight="900" fill="white" text-anchor="middle">6,90 €<tspan font-size="16" font-weight="400" fill="rgba(255,255,255,0.7)">/mes</tspan></text>
+  <text x="720" y="790" font-size="14" fill="rgba(255,255,255,0.8)" text-anchor="middle">Transcripcions · Informes · 20 anàlisis IA setmanals</text>
+  <text x="720" y="812" font-size="13" fill="rgba(255,255,255,0.6)" text-anchor="middle">5 dies de prova gratuïta · Sense targeta</text>
+  <rect x="620" y="828" width="200" height="20" rx="10" fill="rgba(255,255,255,0.15)"/>
+  <text x="720" y="842" font-size="12" fill="white" text-anchor="middle" font-weight="600">Comença ara →</text>
+</svg>
