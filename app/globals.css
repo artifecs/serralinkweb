@@ -1334,6 +1334,36 @@ a, button, [role="button"],
   stroke: #00D9A3 !important;
 }
 
+/* ─── IPHONE SHINE OVERLAY — GSAP-animated titanium light reflection ───── */
+/* Visible when phone is tilted (rotateY:13°); fades as it faces viewer on scroll */
+.iphone-shine {
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;          /* match iphone-frame */
+  /* top-left highlight: simulates light hitting the titanium rim at an angle */
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.10) 28%,
+    transparent 55%
+  );
+  pointer-events: none;
+  z-index: 10;
+  will-change: transform, opacity;
+  /* starts visible; GSAP dims it as phone rotates to face user */
+}
+
+/* ─── HERO PHONE — 3D perspective setup ─────────────────────────────────── */
+/* Perspective is already on .hero-visual (1200px).                           */
+/* Ensure the chain is 3D-ready so rotateY on #iphoneFloater looks real.     */
+#heroVisual {
+  transform-style: preserve-3d;
+}
+#iphoneFloater {
+  will-change: transform, opacity;
+  /* CSS float-phone animation removed by JS; GSAP takes over */
+}
+
 /* --- PREFERS-REDUCED-MOTION — disable all reveal animations --- */
 @media (prefers-reduced-motion: reduce) {
   .reveal {

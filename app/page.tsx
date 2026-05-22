@@ -7,6 +7,7 @@ import ProjectsSlider from '@/components/ProjectsSlider'
 import CookieBanner from '@/components/CookieBanner'
 import FloatingCtas from '@/components/FloatingCtas'
 import ScrollReveal from '@/components/ScrollReveal'
+import HeroPhoneAnimation from '@/components/HeroPhoneAnimation'
 
 export const metadata: Metadata = {
   title: 'Serra.link — Experts en creació de pàgines web i programació',
@@ -19,6 +20,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
+      <HeroPhoneAnimation />
       <section className="hero-wrapper">
         <canvas className="hero-canvas" id="heroCanvas"></canvas>
         <div className="hero-orb hero-orb-1"></div>
@@ -64,6 +66,8 @@ export default function HomePage() {
           <div className="hero-visual" id="heroVisual">
             <div className="iphone-floater" id="iphoneFloater">
               <div className="iphone-frame">
+                {/* Titanium shine — GSAP sweeps this on scroll */}
+                <div className="iphone-shine" aria-hidden="true"></div>
                 <div className="iphone-island"></div>
                 <div className="iphone-screen">
                   <div className="iphone-statusbar">
