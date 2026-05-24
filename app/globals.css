@@ -1334,6 +1334,26 @@ a, button, [role="button"],
   stroke: #00D9A3 !important;
 }
 
+/* ─── NAV — hide on scroll-down, reveal on scroll-up ───────────────────── */
+nav {
+  transition: transform 0.32s cubic-bezier(.16,1,.3,1), background 0.3s;
+}
+nav.nav-scrolled-hide {
+  transform: translateY(-100%);
+}
+
+/* ─── HERO CANVAS — particle network background ─────────────────────────── */
+.hero-canvas {
+  display:  none;               /* shown by JS when loaded */
+  position: absolute;
+  inset:    0;
+  width:    100%;
+  height:   100%;
+  z-index:  0;
+  opacity:  0.55;
+  pointer-events: none;
+}
+
 /* ─── IPHONE SHINE OVERLAY — GSAP-animated titanium light reflection ───── */
 /* Visible when phone is tilted (rotateY:13°); fades as it faces viewer on scroll */
 .iphone-shine {

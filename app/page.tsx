@@ -8,6 +8,7 @@ import CookieBanner from '@/components/CookieBanner'
 import FloatingCtas from '@/components/FloatingCtas'
 import ScrollReveal from '@/components/ScrollReveal'
 import HeroPhoneAnimation from '@/components/HeroPhoneAnimation'
+import HeroCanvas from '@/components/HeroCanvas'
 
 export const metadata: Metadata = {
   title: 'Serra.link — Experts en creació de pàgines web i programació',
@@ -21,6 +22,7 @@ export default function HomePage() {
     <>
       {/* HERO */}
       <HeroPhoneAnimation />
+      <HeroCanvas />
       <section className="hero-wrapper">
         <canvas className="hero-canvas" id="heroCanvas"></canvas>
         <div className="hero-orb hero-orb-1"></div>

@@ -158,6 +158,23 @@ export default function HeroPhoneAnimation() {
         },
       })
 
+      // ── 5. Hero TEXT — drifts left + fades as phone faces viewer ─
+      // Creates a counter-motion: text retreats, phone advances
+      const heroText = document.querySelector('.hero > div:first-child') as HTMLElement | null
+      if (heroText) {
+        gsap.to(heroText, {
+          opacity: 0,
+          x:      -40,
+          ease:   'none',
+          scrollTrigger: {
+            trigger: '.hero-wrapper',
+            start:   '18% top',
+            end:     '62% top',
+            scrub:    1.2,
+          },
+        })
+      }
+
       return () => {
         entry.kill()
         ScrollTrigger.getAll().forEach(st => st.kill())

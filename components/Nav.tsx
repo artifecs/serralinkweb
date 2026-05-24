@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import ThemeToggle from './ThemeToggle'
@@ -8,6 +8,27 @@ const WA_URL = "https://wa.me/34650752356?text=Hola%2C%20m%27agradaria%20m%C3%A9
 
 export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [hidden, setHidden]     = useState(false)
+  const lastY = useRef(0)
+
+  // Hide nav on scroll-down, reveal on scroll-up
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+
+    const onScroll = () => {
+      const y = window.scrollY
+      // Only trigger after 80px so initial hero scroll doesn't hide nav
+      if (y > 80) {
+        setHidden(y > lastY.current)
+      } else {
+        setHidden(false)
+      }
+      lastY.current = y
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   function closeMenu() {
     setMenuOpen(false)
@@ -25,7 +46,7 @@ export default function Nav() {
       {/* Accessibility: skip to main content */}
       <a href="#main-content" className="skip-link">Saltar al contingut principal</a>
 
-      <nav aria-label="Navegació principal">
+      <nav aria-label="Navegació principal" className={hidden ? 'nav-scrolled-hide' : ''}>
         <Link href="/" className="nav-logo">
           <Image
             src="https://www.serra.link/logo_serra_link.webp"
