@@ -31,25 +31,58 @@ export default function HomePage() {
 
         <svg className="hero-fractal" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
           <defs>
+            {/* ── Gradient palette ── */}
+            {/* Diagonal linear: teal top-left → forest-green bottom-right */}
+            <linearGradient id="gTeal" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+              <stop offset="0%"   stopColor="#00D9A3" stopOpacity="0.9" />
+              <stop offset="45%"  stopColor="#00c48f" stopOpacity="0.65" />
+              <stop offset="100%" stopColor="#14b88a" stopOpacity="0.25" />
+            </linearGradient>
+            {/* Soft mint for thinner strokes */}
+            <linearGradient id="gMint" x1="1200" y1="0" x2="0" y2="700" gradientUnits="userSpaceOnUse">
+              <stop offset="0%"   stopColor="#4ade80" stopOpacity="0.6" />
+              <stop offset="50%"  stopColor="#00D9A3" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#00b389" stopOpacity="0.15" />
+            </linearGradient>
+            {/* Radial glow: bright teal centre → transparent edge */}
+            <radialGradient id="gGlow" cx="62%" cy="38%" r="52%">
+              <stop offset="0%"   stopColor="#00D9A3" stopOpacity="0.18" />
+              <stop offset="55%"  stopColor="#00D9A3" stopOpacity="0.06" />
+              <stop offset="100%" stopColor="#00D9A3" stopOpacity="0"   />
+            </radialGradient>
+            {/* Diagonal accent: jade → cyan */}
+            <linearGradient id="gJade" x1="0" y1="700" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+              <stop offset="0%"   stopColor="#34d399" stopOpacity="0.5" />
+              <stop offset="100%" stopColor="#00D9A3" stopOpacity="0.2" />
+            </linearGradient>
+
+            {/* ── Concentric-circle + crosshair tile (200 × 200) ── */}
             <pattern id="frac3" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
-              <circle cx="100" cy="100" r="90" fill="none" stroke="#fff" strokeWidth="0.7" />
-              <circle cx="100" cy="100" r="70" fill="none" stroke="#fff" strokeWidth="0.55" />
-              <circle cx="100" cy="100" r="50" fill="none" stroke="#fff" strokeWidth="0.4" />
-              <circle cx="100" cy="100" r="30" fill="none" stroke="#fff" strokeWidth="0.3" />
-              <circle cx="100" cy="100" r="12" fill="none" stroke="#fff" strokeWidth="0.2" />
-              <line x1="10" y1="100" x2="190" y2="100" stroke="#fff" strokeWidth="0.3" />
-              <line x1="100" y1="10" x2="100" y2="190" stroke="#fff" strokeWidth="0.3" />
-              <line x1="27" y1="27" x2="173" y2="173" stroke="#fff" strokeWidth="0.2" />
-              <line x1="173" y1="27" x2="27" y2="173" stroke="#fff" strokeWidth="0.2" />
+              <circle cx="100" cy="100" r="90" fill="none" stroke="url(#gTeal)" strokeWidth="0.75" />
+              <circle cx="100" cy="100" r="70" fill="none" stroke="url(#gMint)" strokeWidth="0.6"  />
+              <circle cx="100" cy="100" r="50" fill="none" stroke="url(#gTeal)" strokeWidth="0.45" />
+              <circle cx="100" cy="100" r="30" fill="none" stroke="url(#gMint)" strokeWidth="0.32" />
+              <circle cx="100" cy="100" r="12" fill="none" stroke="url(#gTeal)" strokeWidth="0.22" />
+              <line x1="10"  y1="100" x2="190" y2="100" stroke="url(#gTeal)" strokeWidth="0.3" strokeOpacity="0.7" />
+              <line x1="100" y1="10"  x2="100" y2="190" stroke="url(#gTeal)" strokeWidth="0.3" strokeOpacity="0.7" />
+              <line x1="27"  y1="27"  x2="173" y2="173" stroke="url(#gMint)" strokeWidth="0.22" strokeOpacity="0.6" />
+              <line x1="173" y1="27"  x2="27"  y2="173" stroke="url(#gMint)" strokeWidth="0.22" strokeOpacity="0.6" />
             </pattern>
+
+            {/* ── Nested hexagon tile (120 × 120) ── */}
             <pattern id="frac1" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-              <polygon points="60,5 115,35 115,85 60,115 5,85 5,35" fill="none" stroke="#fff" strokeWidth="0.7" />
-              <polygon points="60,20 98,42 98,78 60,100 22,78 22,42" fill="none" stroke="#fff" strokeWidth="0.4" />
-              <polygon points="60,35 84,49 84,71 60,85 36,71 36,49" fill="none" stroke="#fff" strokeWidth="0.25" />
+              <polygon points="60,5 115,35 115,85 60,115 5,85 5,35"   fill="none" stroke="url(#gJade)" strokeWidth="0.75" />
+              <polygon points="60,20 98,42 98,78 60,100 22,78 22,42"  fill="none" stroke="url(#gMint)" strokeWidth="0.45" />
+              <polygon points="60,35 84,49 84,71 60,85 36,71 36,49"   fill="none" stroke="url(#gTeal)" strokeWidth="0.28" />
             </pattern>
           </defs>
+
+          {/* Layer 1 — circle rings */}
           <rect width="1200" height="700" fill="url(#frac3)" />
-          <rect width="1200" height="700" fill="url(#frac1)" opacity="0.45" />
+          {/* Layer 2 — hexagons at 50% */}
+          <rect width="1200" height="700" fill="url(#frac1)" opacity="0.5" />
+          {/* Layer 3 — radial glow from phone-side of hero */}
+          <rect width="1200" height="700" fill="url(#gGlow)" />
         </svg>
 
         <div className="hero">
