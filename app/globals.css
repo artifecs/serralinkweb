@@ -26,8 +26,8 @@
   --card-bg: #1a1a18; --service-bg: #1a1a18; --stat-alt: #1a1a18;
 }
 
-html { scroll-behavior: smooth; }
-body { font-family: var(--font); background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; transition: background 0.3s, color 0.3s; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { font-family: var(--font); background: var(--bg); color: var(--text); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; transition: background 0.3s, color 0.3s; overflow-x: hidden; }
 
 /* NAV — always dark */
 nav {
@@ -128,6 +128,8 @@ nav {
 /* HERO — clean dark-teal gradient, no decorative drawings */
 .hero-wrapper {
   position: relative; overflow: hidden;
+  /* Full-width explicitly: perspective on a parent can misreport width in some browsers */
+  width: 100%;
   /* Multi-stop gradient: deep navy → slate teal → forest teal */
   background:
     radial-gradient(ellipse 70% 55% at 75% 50%, rgba(26,74,64,0.55) 0%, transparent 70%),
@@ -251,7 +253,8 @@ nav {
 }
 
 /* Perspectiva al pare de heroVisual perquè els rotateX/Y tinguin profunditat real */
-.hero-wrapper { perspective: 1400px; perspective-origin: 50% 40%; }
+/* ⚠ Perspective on .hero-wrapper caused background clipping in some browsers.
+   Using .hero-visual (already perspective:1200px) is sufficient for the 3D chain. */
 @keyframes float-phone {
   0%,100% { transform: translateY(0px) rotateZ(0deg); }
   30%     { transform: translateY(-14px) rotateZ(0.4deg); }
@@ -925,10 +928,13 @@ nav {
     justify-content: center;
     perspective: 900px;
   }
+  /* Hide desktop ambient glow on mobile — it looked like a weird gradient below the phone */
+  .hero-visual::after { display: none; }
   .iphone-frame { width: 240px; }
   /* Scale down the phone content proportionally */
   .iphone-island  { width: 84px; height: 24px; margin-bottom: 4px; }
   .iphone-screen  { border-radius: 30px; }
+  /* Use translate instead of scale so content fills the screen without gaps */
   .iphone-content { transform: scale(0.82); transform-origin: top center; }
   .process-layout { grid-template-columns: 1fr; gap: 40px; }
   .macbook-wrap { order: -1; }
