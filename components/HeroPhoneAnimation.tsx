@@ -6,6 +6,7 @@
  *   1. Entry  — phone flies in from above with 3D tilt + micro-bounce
  *   2. Float  — continuous y-oscillation + subtle Z-rock (GSAP loop)
  *   3. Scroll — rotateY 13°→0° (faces viewer), shine sweep, screen parallax
+ *   4. Mouse  — #iphoneTilter follows cursor with ±5°/±4° rotateY/X
  *      ⚠ NO fade-out, NO opacity animation — phone stays visible always
  *
  * Mobile (≤768px) / reduced-motion:
@@ -21,7 +22,8 @@ export default function HeroPhoneAnimation() {
   useEffect(() => {
     const visual  = document.getElementById('heroVisual')
     const floater = document.getElementById('iphoneFloater')
-    if (!visual || !floater) return
+    const tilter  = document.getElementById('iphoneTilter')
+    if (!visual || !floater || !tilter) return
 
     const mm = gsap.matchMedia()
 
@@ -103,12 +105,43 @@ export default function HeroPhoneAnimation() {
           })
         }
 
-        // ⚠ NO step 4 — phone is NEVER faded out or moved off-screen
+        // ── 4. Mouse parallax — tilter wrapper only (±5° Y, ±4° X) ─
+        // Separate element so it doesn't conflict with floater's rotateY/scroll
+        const xTo = gsap.quickTo(tilter, 'rotateY', { duration: 0.85, ease: 'power3.out' })
+        const yTo = gsap.quickTo(tilter, 'rotateX', { duration: 0.85, ease: 'power3.out' })
+
+        const MAX_RY =  5   // degrees left/right
+        const MAX_RX =  4   // degrees up/down
+
+        const heroEl = document.querySelector('.hero-wrapper') as HTMLElement | null
+
+        const onMouseMove = (e: MouseEvent) => {
+          const rect = (heroEl ?? document.documentElement).getBoundingClientRect()
+          // Normalised -1 … +1 from center of hero
+          const nx = ((e.clientX - rect.left) / rect.width  - 0.5) * 2
+          const ny = ((e.clientY - rect.top)  / rect.height - 0.5) * 2
+          xTo( nx * MAX_RY)
+          yTo(-ny * MAX_RX)   // negative: cursor up → tilt back (natural)
+        }
+
+        const onMouseLeave = () => {
+          xTo(0)
+          yTo(0)
+        }
+
+        const target = heroEl ?? document.documentElement
+        target.addEventListener('mousemove',  onMouseMove  as EventListener)
+        target.addEventListener('mouseleave', onMouseLeave as EventListener)
+
+        // ⚠ NO step 5 — phone is NEVER faded out or moved off-screen
         // It scrolls away naturally with the hero section
 
         return () => {
           entry.kill()
           ScrollTrigger.getAll().forEach(st => st.kill())
+          target.removeEventListener('mousemove',  onMouseMove  as EventListener)
+          target.removeEventListener('mouseleave', onMouseLeave as EventListener)
+          gsap.set(tilter, { clearProps: 'rotateX,rotateY' })
         }
       }
     )
@@ -119,6 +152,7 @@ export default function HeroPhoneAnimation() {
     mm.add('(max-width: 768px)', () => {
       gsap.set(visual,  { clearProps: 'all' })
       gsap.set(floater, { clearProps: 'all' })
+      gsap.set(tilter,  { clearProps: 'all' })
     })
 
     /* ─────────────────────────────────────────────────────────────────
@@ -127,6 +161,7 @@ export default function HeroPhoneAnimation() {
     mm.add('(prefers-reduced-motion: reduce)', () => {
       gsap.set(visual,  { clearProps: 'all' })
       gsap.set(floater, { clearProps: 'all' })
+      gsap.set(tilter,  { clearProps: 'all' })
     })
 
     return () => mm.revert()

@@ -125,24 +125,22 @@ nav {
 .mobile-menu a:hover { color: rgba(255,255,255,0.55); }
 .mobile-menu-phone { font-size: 18px !important; font-weight: 500 !important; color: rgba(255,255,255,0.25) !important; margin-top: 8px; }
 
-/* HERO with blue gradient */
+/* HERO — clean dark-teal gradient, no decorative drawings */
 .hero-wrapper {
   position: relative; overflow: hidden;
-  background: linear-gradient(160deg, #162229 0%, #23333F 55%, #1a4a40 100%);
+  /* Multi-stop gradient: deep navy → slate teal → forest teal */
+  background:
+    radial-gradient(ellipse 70% 55% at 75% 50%, rgba(26,74,64,0.55) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(22,34,41,0.8) 0%, transparent 65%),
+    linear-gradient(150deg,
+      #0e1a20 0%,
+      #162229 18%,
+      #1c2f38 42%,
+      #1e3d35 68%,
+      #152b25 100%
+    );
   min-height: 100vh;
 }
-
-/* Canvas for animated fractal — removed */
-.hero-canvas { display: none; }
-
-/* SVG fractal background — gradient colours, higher opacity so gradients shine */
-.hero-fractal {
-  position: absolute; inset: 0; width: 100%; height: 100%;
-  opacity: 0.75; pointer-events: none; z-index: 0;
-}
-
-/* Blurred orbs — removed */
-.hero-orb { display: none; }
 
 .hero {
   position: relative; z-index: 1;
@@ -1351,18 +1349,6 @@ nav.nav-scrolled-hide {
   transform: translateY(-100%);
 }
 
-/* ─── HERO CANVAS — particle network background ─────────────────────────── */
-.hero-canvas {
-  display:  none;               /* shown by JS when loaded */
-  position: absolute;
-  inset:    0;
-  width:    100%;
-  height:   100%;
-  z-index:  0;
-  opacity:  0.55;
-  pointer-events: none;
-}
-
 /* ─── IPHONE SHINE OVERLAY — GSAP-animated titanium light reflection ───── */
 /* Visible when phone is tilted (rotateY:13°); fades as it faces viewer on scroll */
 .iphone-shine {
@@ -1383,10 +1369,14 @@ nav.nav-scrolled-hide {
 }
 
 /* ─── HERO PHONE — 3D perspective setup ─────────────────────────────────── */
-/* Perspective is already on .hero-visual (1200px).                           */
-/* Ensure the chain is 3D-ready so rotateY on #iphoneFloater looks real.     */
+/* Chain: .hero-wrapper(perspective) → #heroVisual → #iphoneTilter → #iphoneFloater */
 #heroVisual {
   transform-style: preserve-3d;
+}
+/* Mouse-parallax wrapper — only receives rotateX/Y from cursor tracking */
+#iphoneTilter {
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 #iphoneFloater {
   will-change: transform, opacity;
